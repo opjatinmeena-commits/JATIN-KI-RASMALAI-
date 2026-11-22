@@ -4,6 +4,7 @@ import dev.arbjerg.lavalink.client.Helpers;
 import dev.arbjerg.lavalink.client.LavalinkClient;
 import dev.arbjerg.lavalink.client.NodeOptions;
 import dev.arbjerg.lavalink.client.Link;
+import import dev.arbjerg.lavalink.client.FunctionalLoadResultHandler; 
 import dev.arbjerg.lavalink.client.event.TrackEndEvent;
 import dev.arbjerg.lavalink.client.player.*;
 import dev.arbjerg.lavalink.libraries.jda.JDAVoiceUpdateListener;
@@ -20,7 +21,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
-import net.dv8tion.jda.api.interactions.components.buttons.Button;
+import import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 

@@ -25,6 +25,7 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 import net.dv8tion.jda.api.components.buttons.Button;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
+import net.dv8tion.jda.api.components.actionrow.ActionRow;
 
 import java.awt.Color;
 import java.util.ArrayDeque;
@@ -172,7 +173,7 @@ public final class MusicBot extends ListenerAdapter {
                     event.reply("Nothing is playing right now.").setEphemeral(true).queue();
                 } else {
                     event.replyEmbeds(nowPlayingEmbed(state))
-                            .addActionRow(playerButtons()).queue();
+        .addComponents(ActionRow.of(playerButtons())).queue();
                 }
             }
             case "247" -> {
